@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign Up Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Sign Up</h1>
+<form id="signupForm">
+<div class="input-group">
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName">
+</div>
+<div class="input-group">
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" name="lastName">
+</div>
+<div class="input-group">
+<label for="dateOfBirth">Date of Birth</label>
+<input type="date" id="dateOfBirth" name="dateOfBirth">
+</div>
+<div class="input-group">
+<label for="gender">Gender</label>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+</div>
+<div class="input-group">
+<label for="country">Country</label>
+<select id="country" name="country">
+<option value="United States">United States</option>
+<option value="Canada">Canada</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Australia">Australia</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="input-group">
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email">
+</div>
+<div class="input-group">
+<label for="phone">Phone</label>
+<input type="tel" id="phone" name="phone">
+</div>
+<div class="input-group">
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+</div>
+<div class="input-group">
+<label for="confirmPassword">Confirm Password</label>
+<input type="password" id="confirmPassword" name="confirmPassword">
+</div>
+<div class="input-group">
+<input type="checkbox" id="termsOfUse" name="termsOfUse">
+<label for="termsOfUse">I agree to the terms of use</label>
+</div>
+<input type="submit" value="Submit">
+<input type="reset" value="Cancel">
+</form>
+<script src="script.js"></script>
+</body>
+</html>

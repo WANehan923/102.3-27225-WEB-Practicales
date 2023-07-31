@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Table Border</title>
+    <style>
+        /* Default table border */
+        table {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <label for="borderWidth">Enter border width (in pixels):</label>
+    <br>
+    <input type="number" id="borderWidth" value="1">
+    <br><br><br>
+    <button onclick="changeTableBorder()">Change Table Border</button>
+    <br><br><br>
+    
+    <table id="myTable">
+        <tr>
+            <td>Row 1</td>
+            <td>Row 2</td>
+        </tr>
+        <tr>
+            <td>Row 3</td>
+            <td>Row 4</td>
+        </tr>
+    </table>
+
+    <script>
+        function changeTableBorder() {
+            var borderWidthInput = document.getElementById("borderWidth");
+            var borderWidth = parseInt(borderWidthInput.value);
+            if (isNaN(borderWidth) || borderWidth < 0) {
+                alert("Please enter a valid positive number for the border width.");
+                return;
+            }
+
+            var myTable = document.getElementById("myTable");
+            myTable.style.border = `${borderWidth}px solid red`;
+        }
+    </script>
+</body>
+</html>
